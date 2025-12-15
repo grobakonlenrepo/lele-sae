@@ -81,7 +81,7 @@ try {
       produkTerlaris: {
         nama: cleanString(data["Nama Produk Terlaris"]) || "",
         harga: cleanNumber(data["Harga Produk Terlaris"]),
-        hero: "/images/produkTerlaris.png",
+        hero: "/images/produkTerlaris.jpg",
       },
     },
 
@@ -97,7 +97,7 @@ try {
 
         if (nama && harga > 0) {
           products.push({
-            src: `/images/product${i}.png`,
+            src: `/images/product${i}.jpg`,
             rating: cleanNumber(data[`Rating Bintang Produk ${i}`]),
             nama: nama,
             harga: harga,
@@ -162,7 +162,7 @@ try {
 
     tentangKami: {
       slogan: cleanString(data["Slogan Usaha Anda"]) || "",
-      fotoRuko: "/images/ruko.png",
+      fotoRuko: "/images/ruko.jpg",
       keunggulan:
         cleanString(
           data["Deskripsikan Keunggulan Produk Anda Dibanding Kompetitor"]

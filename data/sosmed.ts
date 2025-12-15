@@ -1,19 +1,14 @@
 export const sosmed = [
   {
-    platform: "WhatsApp",
-    url: "https://wa.me/6282257999523",
-    username: "6282257999523",
+    "platform": "WhatsApp",
+    "url": "https://wa.me/6281328976594",
+    "username": "WhatsApp"
   },
   {
-    platform: "Instagram",
-    url: "https://instagram.com/grobakonlen",
-    username: "grobakonlen",
-  },
-  {
-    platform: "TikTok",
-    url: "https://tiktok.com/@grobakonlen",
-    username: "grobakonlen",
-  },
+    "platform": "Instagram",
+    "url": "https://instagram.com/lelesae",
+    "username": "lelesae"
+  }
 ];
 
 export type SosmedType = typeof sosmed;
