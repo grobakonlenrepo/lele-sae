@@ -9,7 +9,7 @@ import Footer from "@/components/footer";
 import Watermark from "@/components/watermark";
 import ScrollToTop from "@/components/scroll-to-top";
 import WhatsappButton from "@/components/wa-bubble";
-import Sertifikat from "@/components/sertifikat";
+//import Sertifikat from "@/components/sertifikat";
 
 const page = () => {
   return (
@@ -20,7 +20,7 @@ const page = () => {
       <Testimoni />
       <FAQ />
       <TentangKami />
-      <Sertifikat />
+      
       <Kontak />
       <Footer />
       <Watermark />
