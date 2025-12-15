@@ -20,7 +20,7 @@ const page = () => {
       <Testimoni />
       <FAQ />
       <TentangKami />
-      
+      <Sertifikat />
       <Kontak />
       <Footer />
       <Watermark />

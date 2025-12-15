@@ -32,7 +32,8 @@ const Sertifikat = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
 
-  const { ada: adaSertifikat, list: sertifikatList } = content.sertifikat;
+  const { ada: adaSertifikat, list: sertifikatList } =
+    content.sertifikat as { ada: boolean; list: Certificate[] };
 
   // Scroll animation
   const { ref, isVisible } = useScrollAnimation({

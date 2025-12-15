@@ -12,12 +12,19 @@ import {
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ANIMATIONS, VISIBLE_STATE } from "@/constants/animations";
 
+interface Testimonial {
+  nama: string;
+  isi: string;
+  rating: number;
+  src?: string;
+}
+
 const Testimoni = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(1);
   const [visibleItems, setVisibleItems] = useState<number[]>([]);
 
-  const testimonials = content.testimoni.list;
+  const testimonials = content.testimoni.list as Testimonial[];
   const showProfilePhoto = content.testimoni.tampilkanFotoProfil;
 
   // Scroll animation with individual item control
@@ -166,7 +173,12 @@ const Testimoni = () => {
                         >
                           {showProfilePhoto ? (
                             <Image
-                              src={item.src}
+                              src={
+                                item.src ||
+                                `/placeholder.svg?height=80&width=80&text=${encodeURIComponent(
+                                  item.nama,
+                                )}`
+                              }
                               alt={`Foto ${item.nama}`}
                               width={80}
                               height={80}
